@@ -37,7 +37,7 @@ Portfólio profissional desenvolvido com tecnologias modernas, apresentando meus
 
 ## 🌟 Preview
 
-[Link do Projeto em Produção](https://seu-link-aqui.vercel.app)
+[Link do Projeto em Produção](https://portfolio-v2-seven-indol.vercel.app/)
 
 ## 📝 Licença
 
