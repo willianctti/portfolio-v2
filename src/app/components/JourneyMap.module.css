@@ -1,0 +1,139 @@
+.section {
+  padding: 8rem 1rem;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 4rem;
+}
+
+.title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 4rem;
+  background: linear-gradient(to right, #8B5CF6, #EC4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.journeyContainer {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  padding: 2rem 0;
+}
+
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  position: relative;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(to bottom, #8B5CF6, #EC4899);
+  opacity: 0.3;
+}
+
+.journeyPoint {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: relative;
+}
+
+.yearBadge {
+  padding: 0.5rem 1rem;
+  border-radius: 999px;
+  color: white;
+  font-weight: 500;
+  font-size: 0.875rem;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: -2rem;
+  z-index: 1;
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+  background: var(--card-bg);
+  border-radius: 1rem;
+  padding: 2rem;
+  border: 1px solid rgba(139, 92, 246, 0.1);
+  backdrop-filter: blur(10px);
+  position: relative;
+}
+
+.currentCard {
+  border: 1px solid rgba(139, 92, 246, 0.3);
+  box-shadow: 0 0 20px rgba(139, 92, 246, 0.1);
+}
+
+.iconContainer {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.icon {
+  color: white;
+  font-size: 1.5rem;
+}
+
+.cardTitle {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  background: linear-gradient(to right, #8B5CF6, #EC4899);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.cardDescription {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.currentBadge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background: linear-gradient(135deg, #8B5CF6, #EC4899);
+  padding: 0.25rem 0.75rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 6rem 1rem 8rem;
+  }
+
+  .timeline::before {
+    left: 2rem;
+  }
+
+  .journeyPoint {
+    justify-content: flex-end;
+  }
+
+  .yearBadge {
+    left: 2rem;
+    transform: none;
+  }
+
+  .card {
+    max-width: calc(100% - 4rem);
+  }
+}

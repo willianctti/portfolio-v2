@@ -1,0 +1,31 @@
+.themeToggle {
+  background: none;
+  border: none;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--text-color);
+  background: rgba(139, 92, 246, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.icon {
+  font-size: 1.2rem;
+}
+
+@media (max-width: 768px) {
+  .themeToggle {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    padding: 1rem;
+  }
+
+  .icon {
+    font-size: 1.5rem;
+  }
+}
